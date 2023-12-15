@@ -1,0 +1,19 @@
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <div style="background:lightgrey;width:700px;height:300px;font-size:20px:padding:30px;margin:36px 30px ">
+    <label> Movie Name</label><br>
+    <input style="width:700px;height:30px" type="text" name="name" placeholder="enter the movie name"><br>
+    <label>enter the discription</label><br>
+    <input style="width:700px;height:30px" type="text" name="desc" placeholder="enter the movie description"><br>
+     <label>Year</label><br>
+    <input  style="width:700px;height:30px"type="number" name="year" placeholder="enter the movie yer"><br>
+    <label>Image</label><br>
+    <input type="file" name="img">
+    <input type="submit">
+    </div>
+
+
+
+
+</form>
